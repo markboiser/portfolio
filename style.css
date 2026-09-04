@@ -11,6 +11,7 @@ body{
   line-height:1.6;
 }
 
+
 /* =========================
    NAVIGATION
 ========================= */
@@ -50,6 +51,7 @@ nav a{
   color:#cbd5e1;
   text-decoration:none;
   font-weight:600;
+  transition:.2s ease;
 }
 
 nav a:hover,
@@ -128,6 +130,7 @@ section{
   border-radius:10px;
   text-decoration:none;
   font-weight:700;
+  transition:.2s ease;
 }
 
 .primary{
@@ -142,6 +145,13 @@ section{
 
 .primary:hover{
   background:#1d4ed8;
+  transform:translateY(-2px);
+}
+
+.secondary:hover{
+  border-color:#60a5fa;
+  color:#60a5fa;
+  transform:translateY(-2px);
 }
 
 
@@ -161,6 +171,12 @@ section{
   border:1px solid #1f2937;
   border-radius:16px;
   padding:24px;
+  transition:.2s ease;
+}
+
+.card:hover{
+  border-color:#334155;
+  transform:translateY(-2px);
 }
 
 .card h3{
@@ -190,6 +206,7 @@ section{
   display:flex;
   justify-content:space-between;
   margin-bottom:7px;
+  gap:15px;
 }
 
 .level{
@@ -209,6 +226,15 @@ section{
   height:100%;
   background:#3b82f6;
   border-radius:20px;
+}
+
+.skill-desc{
+  margin-top:6px;
+}
+
+.context{
+  margin-top:15px;
+  color:#94a3b8;
 }
 
 
@@ -268,6 +294,10 @@ section{
   border-radius:12px;
 }
 
+.evidence-box p{
+  margin-bottom:12px;
+}
+
 .evidence-label{
   display:inline-block;
   margin-top:10px;
@@ -278,6 +308,10 @@ section{
 
 .project-summary{
   margin-top:70px;
+}
+
+.project-summary .card h3{
+  color:#60a5fa;
 }
 
 
@@ -355,16 +389,15 @@ section{
 
 
 /* =========================
-   EXISTING CONTEXT
+   LINKS
 ========================= */
 
-.context{
-  margin-top:15px;
-  color:#94a3b8;
+.card a{
+  color:#60a5fa;
 }
 
-.skill-desc{
-  margin-top:6px;
+.card a:hover{
+  color:#93c5fd;
 }
 
 
@@ -377,6 +410,7 @@ footer{
   text-align:center;
   padding:25px;
   color:#64748b;
+  margin-top:20px;
 }
 
 
@@ -413,6 +447,11 @@ footer{
     font-size:1.8rem;
   }
 
+  .skill-head{
+    flex-direction:column;
+    gap:2px;
+  }
+
   .gap-card{
     padding-left:55px;
   }
@@ -420,6 +459,15 @@ footer{
   .gap-number{
     left:18px;
     top:20px;
+  }
+
+  .project-card{
+    padding:20px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
   }
 
 }
